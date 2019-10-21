@@ -1,17 +1,15 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Agenda />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Agenda from './components/Agenda'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Agenda
   }
 }
 </script>

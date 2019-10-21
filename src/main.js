@@ -1,8 +1,13 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from "vue";
+import App from "./App.vue";
+import store from "./store/store";
 
-Vue.config.productionTip = false
+import modal from "vue-js-modal";
+
+Vue.config.productionTip = false;
+Vue.use(modal, { dialog: true, dynamic: true });
 
 new Vue({
   render: h => h(App),
-}).$mount('#app')
+  store
+}).$mount("#app");
